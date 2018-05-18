@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="76.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventory.Controllers.MainWindowController">
+   <children>
+      <Pane prefHeight="76.0" prefWidth="790.0">
+         <children>
+            <ImageView fitHeight="69.0" fitWidth="64.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/inventory/Resources/Pictures/icons8_Forumbee_96px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="172.0" layoutY="14.0" text="Welcome, " />
+            <Label fx:id="nameLabel" layoutX="112.0" layoutY="31.0" prefHeight="36.0" prefWidth="175.0" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="12.0" />
+               </font></Label>
+            <JFXButton layoutX="324.0" layoutY="13.0" prefHeight="51.0" onAction="#buttonProductsAction" prefWidth="83.0" ripplerFill="#fbf9f8" style="-fx-background-color: #32aa9f;" text="Products" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="416.0" layoutY="13.0" prefHeight="51.0" onAction="#buttonPurchasesAction" prefWidth="83.0" ripplerFill="#fbf9f8" style="-fx-background-color: #32aa9f;" text="Purchases" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="508.0" layoutY="13.0" prefHeight="51.0" onAction="#buttonSalesAction" prefWidth="83.0" ripplerFill="#fbf9f8" style="-fx-background-color: #32aa9f;" text="Sales" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="601.0" layoutY="13.0" prefHeight="51.0" onAction="#buttonSuppliersAction" prefWidth="83.0" ripplerFill="#fbf9f8" style="-fx-background-color: #32aa9f;" text="Suppliers" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="693.0" layoutY="13.0" onAction="#exitButtonAction" prefHeight="51.0" prefWidth="83.0" ripplerFill="#fbf9f8" style="-fx-background-color: #32aa9f;" text="Exit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
